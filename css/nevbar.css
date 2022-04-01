@@ -1,0 +1,104 @@
+/* nevigation bar */
+.nevbar{
+    /* overflow-x: hidden; */
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    /* background-color:white; */
+    color: white;
+    /* box-shadow: 0 5px 12px -1px rgb(0 0 0 / 10%); */
+}
+.menu{
+    /* box-sizing: border-box; */
+    /* margin: 0 auto; */
+    max-width: 970px;
+    /* align-items: center; */
+    flex: 1;
+    margin: 0;
+    text-align: right;
+    /* background-color: aqua; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.menu ul li{
+    list-style: none;
+    background-color: transparent;
+    display: inline-block;
+}
+.menu ul li a{
+    background: white;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 13px;
+    transition: 0.5s;
+    font-weight: 300;
+    position: relative;
+}
+.menu ul li a:hover {
+    color: #555;
+}
+.menu ul li #login, .menu ul li #signup {
+    /* border: 2px solid #004599bb; */
+    border: 2px solid #555;
+    /* border-radius: 5px; */
+    padding: 5px 10px;
+    margin: 0 2px;
+    /* clip-path: polygon(0 0, 79% 0, 100% 30%, 100% 100%, 20% 100%, 0 71%); */
+    transition: .3s;
+    
+}
+.menu ul li #login:hover, .menu ul li #signup:hover {
+    background-color: rgba(85, 85, 85, 0.87);
+    color: white;
+}
+@media only screen and (max-width : 1270px){
+    /* .nevbar{
+        background-color: white;
+    } */
+    /* .logo a h1{
+        margin: 0px 12px;
+    } */
+    /* .menu{
+        text-align: right;
+        margin-right: 0px;
+        position:absolute;
+        background-color: transparent;
+        width: 100%;
+        top: 49px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+        transition: .5s;
+    } */
+    /* .menu ul li{
+        list-style: none;
+        display: block;
+        margin: 25px 40px 35px auto;
+    } */
+    /* .menu ul li a{
+        text-decoration: none;
+        color: black;
+        margin-left: 0px;
+        font-size: 15px;
+        transition: 0.5s;
+        font-size: 18px;
+    } */
+    /* .menu ul #search {
+        width: 90%;
+        margin: 0 10px 0 30px;
+        padding: 7.5px 9px;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+    } */
+
+    /* .menuicon{
+        display: block;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    } */
+
+}

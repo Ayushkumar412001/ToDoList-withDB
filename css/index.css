@@ -1,0 +1,186 @@
+body {
+margin: 0;
+min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+    user-select: none;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*  Home page design  */
+.contaner {
+    width: 100% ;
+}
+
+/* background Image*/
+.backimg {
+    background: url('/TDL/images/backimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+}
+/* to do list */
+.todolist {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin: 0px auto;
+} 
+
+/* Remove margins and padding from the list */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    /* font-size: 18px; */
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+    ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+    ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.checked {
+    background: #888;
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #555;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.close:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 30px 40px;
+    color: white;
+    /* text-align: center; */
+}
+.header #dateinfo {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color:rgb(174, 255, 228);
+    /* text-align: right; */
+}
+.header h2 {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.466);
+    display: flex;
+    /* background-color: #555; */
+    align-items: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border: none;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+
+@media only screen and (max-width : 700px) {
+    /* Style the header */
+    .header {
+        font-size: 25px;
+        padding: 30px 20px;
+
+    }
+    .header h2 {
+        font-size: 35px;
+    }
+    .todolist {
+        margin: 0px auto;
+    }
+    .header h2 {
+        display: block;
+    }
+}

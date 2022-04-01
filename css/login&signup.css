@@ -1,0 +1,66 @@
+*{
+    /* padding: 0; */
+    /* margin: 0; */
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+/* background Image*/
+.backimg {
+    background: url('/TDL/images/backimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+}
+.login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.login_container form {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 12px -1px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+}
+.login_container form label {
+    font-weight: 500;
+}
+.login_container p {
+    font-size: 13px;
+}
+.login_container input {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.login_container button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #d9d9d9;
+    color: black;
+    cursor: pointer;
+    margin: 15px auto 0;
+    width: 100%;
+    border: 2px solid #555;
+}
+.login_container button:hover {
+    background-color: #555;
+    color: white
+}
+.account {
+    text-align: center;
+    margin-top: 40px;
+    /* color: white; */
+}
